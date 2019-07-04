@@ -1,0 +1,13 @@
+a=effect("Slider Control")("Slider");
+b=thisComp.layer("Text Position Control").content("Rectangle 1").content("Rectangle Path 1").size[1];
+//*
+
+b= thisLayer.sourceRectAtTime.height;
+yazmak daha mantıklı ama bu çalışmada Rectangle'ın boyutu farklıydı
+
+*//
+
+
+c=thisLayer.sourceRectAtTime().top;
+d=c-b;
+[value[0],ease(a,0,100,c+50,d+50)]
